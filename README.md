@@ -1,6 +1,10 @@
+![](https://portal.alphaedtech.org.br/images/edtech/logo-edtech.webp)
 # HTML + git Website Project
+## Alphaflix 🎬
 
 This repository aims to store and record the steps of building and modifying the project that seeks to evaluate our knowledge in relation to the past content of HTML and versioning.
+
+This application works as a series catalog that shows the information of each series.
 
 Integrantes: 
 + ALAN DOUGLAS ARTIGAS DE SOUZA 
