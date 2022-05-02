@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphaflix</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background: url(./assets/background.jpeg);
+        }
+
+        .container {
+            min-height: 100vh;
+            min-width: 100%;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.86), rgb(0, 0, 0));
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 2rem;
+            padding: 1rem 3rem;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+        }
+
+        .header-element {
+            cursor: pointer;
+        }
+
+        #logo {
+            margin-right: auto;
+        }
+
+        #select-languages {
+            height: 2rem;
+            width: 6rem;
+            background-color:transparent;
+            color: rgb(0, 0, 0);
+        }
+
+        #select-languages option {
+            background-color: rgb(171, 157, 157);
+        }
+
+        #login {
+            height: 2rem;
+            width: 5rem;
+            background-color:crimson;
+            border-radius: 5px;
+            border-style: none;
+            color: aliceblue;
+        }
+    </style>
+
+</head>
+<body>
+
+    <section class="container">
+
+        <header class="header">
+            <img class="header-element" id="logo" src="./assets/img.svg" alt="Alphaflix">
+        <select class="header-element" style="color: aliceblue;" name="languages" id="select-languages">
+            <option value="ptbr">Português</option>
+        </select>
+        <button class="header-element" id="login">
+            Entrar
+        </button>
+        </header>
+    </section>
+    
+</body>
+</html>
