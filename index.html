@@ -1,113 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alphaflix</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alphaflix</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-            background: url(./assets/background.jpeg);
-        }
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+                background: url(./assets/background.jpeg);
+            }
 
-        .container {
-            min-height: 100vh;
-            min-width: 100%;
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.86), rgb(0, 0, 0));
-        }
+            .container {
+                min-height: 100vh;
+                min-width: 100%;
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.86), rgb(0, 0, 0));
+            }
 
-        .header {
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 2rem;
-            padding: 1rem 3rem;
-            background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-        }
+            .header {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 2rem;
+                padding: 1rem 3rem;
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+            }
 
-        .header-element {
-            cursor: pointer;
-        }
+            .header-element {
+                cursor: pointer;
+            }
 
-        #logo {
-            margin-right: auto;
-        }
+            #logo {
+                margin-right: auto;
+            }
 
-        #select-languages {
-            height: 2rem;
-            width: 6rem;
-            background-color:transparent;
-            color: rgb(0, 0, 0);
-        }
+            #select-languages {
+                height: 2rem;
+                width: 6rem;
+                background-color:transparent;
+                color: rgb(0, 0, 0);
+            }
 
-        #select-languages option {
-            background-color: rgb(171, 157, 157);
-        }
+            #select-languages option {
+                background-color: rgb(171, 157, 157);
+            }
 
-        #login {
-            height: 2rem;
-            width: 5rem;
-            background-color:crimson;
-            border-radius: 5px;
-            border-style: none;
-            color: aliceblue;
-        }
+            #login {
+                height: 2rem;
+                width: 5rem;
+                background-color:crimson;
+                border-radius: 5px;
+                border-style: none;
+                color: aliceblue;
+            }
 
-        .story-card {
-            color: aliceblue;
-            min-width: 950px;
-            min-height: 495;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            justify-content: center;
-            align-items: center;
-            padding-top: 75px;
-            filter:brightness(200%);
-        }
+            .story-card {
+                color: aliceblue;
+                min-width: 950px;
+                min-height: 495;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                padding-top: 75px;
+                filter:brightness(200%);
+            }
 
-        .story-card-title {
-            font-size: 50px;
-            font-weight: bold;
-            text-align: center;
-        }
+            .story-card-title {
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+            }
 
-        .story-card-sub-title{
-            font-weight: 400;
-        }
+            .story-card-sub-title{
+                font-weight: 400;
+            }
 
-    </style>
+            .catalog-element {
+                color: aliceblue;
+                display: flex;
+                padding: 5px;
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0,5s ease-in-out;
+                border-radius: 10px;
+                width:438.6px;
+                height: 228px;
+                border: 1px solid #00b68200;
+            }
 
-</head>
-<body>
+            .catalog-element:hover {
+                border: 1px solid #00b682;
+                box-shadow: 0 0 15px #00b682;
+                            inset: 0 0 15px #00b682;
+                text-shadow: 0 0 5px #00b682;
+                background-color: #000000;
+                
+            }
 
-    <section class="container">
+            .catalog-fig {
+            width: 147px;
+            height: 218px;
+            border-radius: 10px;
+            }
 
-        <header class="header">
-            <img class="header-element" id="logo" src="./assets/img.svg" alt="Alphaflix">
-        <select class="header-element" style="color: aliceblue;" name="languages" id="select-languages">
-            <option value="ptbr">Português</option>
-        </select>
-        <button class="header-element" id="login">
-            Entrar
-        </button>
-        </header>
+            .catalog {
+                display: flex;
+                gap: 10px;
+                padding: 15px;
+                padding-top: 75px;
+            }
 
-        <div class="story-card">
-            <h1 class="story-card-title">As melhores sinopses <br /> para suas sinapses</h1>
-            <h2 class="story-card-sub-title">Descubra aqui as séries que tem tudo a ver com você </h2>
-        </div>
-    </section>
+            p {
+                text-align: justify;
+                font-size:small;
+            }
 
-    
-    
-</body>
+            .description-title {
+                font-size:larger;
+                margin-bottom: 10px;
+            }
+
+            .star {
+                width: 1rem;
+                height: 1rem;
+            }
+
+            .details {
+                margin-bottom: 5px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <section class="container">
+
+            <header class="header">
+                <img class="header-element" id="logo" src="./assets/img.svg" alt="Alphaflix">
+            <select class="header-element" style="color: aliceblue;" name="languages" id="select-languages">
+                <option value="ptbr">Português</option>
+            </select>
+            <button class="header-element" id="login">
+                Entrar
+            </button>
+            </header>
+
+            <div class="story-card">
+                <h1 class="story-card-title">As melhores sinopses <br /> para suas sinapses</h1>
+                <h2 class="story-card-sub-title">Descubra aqui as séries que tem tudo a ver com você </h2>
+            </div>
+
+            <div class="catalog">
+                <figure class="catalog-element">
+
+                    <img class="catalog-fig" src="./assets/loki 2.jpg" alt="imagem loki">
+
+                    <figcaption class="fig-description">
+                        <h1 class="description-title">Loki</h1>
+                        <div class= "details">
+                            <p><strong>Classificação:</strong> </p>
+                            <figure>
+                                <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/graystar.svg" alt="estrela amarela"><br />
+                            </figure>    
+                        </div>
+
+                        <div class="details">
+                            <p><strong>Descrição:</strong> </p>                     
+                            <p>Após roubar o tesseract dos Vingadores, Loki usa a Joia do Espaço para pular no tempo e, assim, chegar a Midgard. Mas ele acaba interferindo em momentos importantes da história da humanidade.</p>
+                        </div>
+
+                        <div class="details">
+                            <p><strong>Elenco:</strong> </p>
+                            <p>Tom Hiddleston, Owen Wilson ...</p>
+                        </div>
+
+                    </figcaption>
+                </figure>
+
+                <figure class="catalog-element">
+
+                    <img class="catalog-fig" src="./assets/stranger-things-poster.jpg" alt="imagem loki">
+                    
+                    <figcaption class="fig-description">
+                        <h1 class="description-title">Stranger Things</h1>
+                        <div class= "details">
+                            <p><strong>Classificação:</strong> </p>
+                            <figure>
+                                <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/graystar.svg" alt="estrela amarela"><br />
+                            </figure>    
+                        </div>
+
+                        <div class="details">
+                            <p><strong>Descrição:</strong> </p>                     
+                            <p>Quando Will desaparece misteriosamente, o xerife Jim Hopper inicia uma operação para encontrá-lo. Enquanto isso, Mike, Dustin e Lucas , melhores amigos de Will, decidem procurá-lo por conta própria.</p>
+                        </div>
+
+                        <div class="details">
+                            <p><strong>Elenco:</strong> </p>
+                            <p>Millie Bobby Brown, Winona Ryder ...</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="catalog-element">
+
+                    <img class="catalog-fig" src="./assets/chris-poster.jpg" alt="imagem loki">
+
+                    <figcaption class="fig-description">
+                        <h1 class="description-title">Todo Mundo odeia o Chris</h1>
+                        <div class= "details">
+                            <p><strong>Classificação:</strong> </p>
+                            <figure>
+                                <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/graystar.svg" alt="estrela amarela"><br />
+                            </figure>    
+                        </div>
+
+                        <div class="details">
+                            <p><strong>Descrição:</strong> </p>                     
+                            <p>A série conta a história da família Rock, com o foco no menino Chris. Ele vive situações corriqueiras da vida de um adolescente e expões seus pensamentos sobre essas de forma humorística </p>
+                        </div>
+
+                        <div class="details">
+                            <p><strong>Elenco:</strong> </p>
+                            <p>Tyler James Williams, Terry Crews ...</p>
+                        </div>
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+        
+        
+    </body>
 </html>
