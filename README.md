@@ -6,7 +6,7 @@ This repository aims to store and record the steps of building and modifying the
 
 This application works as a series catalog that shows the information of each series.
 
-Integrantes: 
+Team: 
 + ALAN DOUGLAS ARTIGAS DE SOUZA 
 + GUYRLAM SILVA DUQUE 
 + MARIA CECÍLIA ROMÃO SANTOS 
