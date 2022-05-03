@@ -45,6 +45,7 @@ div {
   background-position: center right;
   line-height: 1.4;
   overflow: hidden;
+  
 }
 
 .info-container {
@@ -191,6 +192,15 @@ a {
   height: 70vh;
   margin: 15vh 20vw;
   display: block;
+}
+
+.close{
+  position: absolute;
+  top: 56px;
+  right: 56px;
+
+  width: 34px;
+  height: 34px;
 }
 
 .hidden{
