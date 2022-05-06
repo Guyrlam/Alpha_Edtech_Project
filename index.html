@@ -17,13 +17,9 @@
 
             body {
                 font-family: Helvetica, Arial, sans-serif;
+                box-shadow: inset 0px -370px 500px 100px rgb(0, 0, 0);  
                 background: url(./assets/background.jpeg);
-            }
-
-            .container {
-                min-height: 100vh;
-                min-width: 100%;
-                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.86), rgb(0, 0, 0));
+                height: 100vh;
             }
 
             .header {
@@ -141,29 +137,35 @@
                 margin-bottom: 5px;
             }
 
+            a {
+                text-decoration: none;
+            }
+
         </style>
 
     </head>
     <body>
 
-        <section class="container">
-
-            <header class="header">
-                <img class="header-element" id="logo" src="./assets/img.svg" alt="Alphaflix">
-                <select class="header-element" style="color: aliceblue;" name="languages" id="select-languages">
-                    <option value="ptbr">Português</option>
-                </select>
-                <button class="header-element" id="login">
+        <header class="header">
+            <img class="header-element" id="logo" src="./assets/img.svg" alt="Alphaflix">
+            <select class="header-element" style="color: aliceblue;" name="languages" id="select-languages">
+                <option value="ptbr">Português</option>
+            </select>
+            <a href="https://cdn.awsli.com.br/800x800/173/173680/produto/5595924/2feffcfa80.jpg">
+                <button class="header-element" id="login" href="http://cdn.shopify.com/s/files/1/2425/3665/products/127-028.jpg?v=1581019625">
                     Entrar
                 </button>
-            </header>
+            </a>
+        </header>
 
-            <div class="story-card">
-                <h1 class="story-card-title">As melhores sinopses <br /> para suas sinapses</h1>
-                <h2 class="story-card-sub-title">Descubra aqui as séries que tem tudo a ver com você </h2>
-            </div>
+        <section class="story-card">
+            <h1 class="story-card-title">As melhores sinopses <br /> para suas sinapses</h1>
+            <h2 class="story-card-sub-title">Descubra aqui as séries que tem tudo a ver com você </h2>
+        </section>
 
-            <div class="catalog">
+        <nav class="catalog">
+
+            <a href="./url">
                 <figure class="catalog-element">
 
                     <img class="catalog-fig" src="./assets/loki 2.jpg" alt="imagem loki">
@@ -189,7 +191,9 @@
 
                     </figcaption>
                 </figure>
+            </a>
 
+            <a href="./url">
                 <figure class="catalog-element">
 
                     <img class="catalog-fig" src="./assets/stranger-things-poster.jpg" alt="imagem loki">
@@ -213,14 +217,16 @@
                             <p>Millie Bobby Brown, Winona Ryder ...</p>
                         </div>
                     </figcaption>
-                </figure>
+                </figure> 
+            </a>
 
+            <a href="./url">
                 <figure class="catalog-element">
 
                     <img class="catalog-fig" src="./assets/chris-poster.jpg" alt="imagem loki">
-
+    
                     <figcaption class="fig-description">
-
+    
                         <h1 class="description-title">Todo Mundo odeia o Chris</h1>
                         
                         <div class= "details">
@@ -229,24 +235,23 @@
                                 <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/graystar.svg" alt="estrela amarela"><br />
                             </figure>
                         </div>
-
+    
                         <div class="details">                            
                             <p><strong>Descrição:</strong> </p>                     
                             <p>A série conta a história da família Rock, com o foco no menino Chris. Ele vive situações corriqueiras da vida de um adolescente e expões seus pensamentos sobre essas de forma humorística </p>
                         </div>
-
+    
                         <div class="details">
                             <p><strong>Elenco:</strong> </p>
                             <p>Tyler James Williams, Terry Crews ...</p>
                         </div>
-
+    
                     </figcaption>
-
+    
                 </figure>
-
-            </div>
-
-        </section>
+            </a>
+            
+        </nav>
         
     </body>
 
