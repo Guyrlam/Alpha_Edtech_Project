@@ -13,10 +13,13 @@
             }
 
             body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 font-family: Helvetica, Arial, sans-serif;
-                box-shadow: inset 0px -370px 500px 100px rgb(0, 0, 0);  
                 background: url(./assets/background.jpeg);
-                height: 100vh;
+                background-size: cover;
+                max-height: 100vh;
             }
 
             .header {
@@ -103,9 +106,9 @@
             }
 
             .catalog-fig {
-            width: 147px;
-            height: 218px;
-            border-radius: 10px;
+                width: 147px;
+                height: 218px;
+                border-radius: 10px;
             }
 
             .catalog {
@@ -113,6 +116,7 @@
                 gap: 10px;
                 padding: 15px;
                 padding-top: 75px;
+                justify-content: space-around;
             }
 
             p {
@@ -138,117 +142,136 @@
                 text-decoration: none;
             }
 
+            .container {
+                box-shadow: inset 0px -370px 500px 100px rgb(0, 0, 0);  
+                height: 100%;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: -1;
+                padding-top: 2rem;
+            }
+
+            .catalog-element {
+                overflow: hidden;
+            }
+
+            .catalog-fig {
+                transition: all 0.3s;
+            }
+
+            .catalog-fig:hover {
+                transform: scale(1.1);
+            }
+
         </style>
 
     </head>
     <body>
         <header class="header">
             <img class="header-element" id="logo" src="./assets/img.svg" alt="Alphaflix">
-            <select class="header-element" style="color: aliceblue;" name="languages" id="select-languages">
-                <option value="ptbr">Português</option>
-            </select>
             <a href="https://cdn.awsli.com.br/800x800/173/173680/produto/5595924/2feffcfa80.jpg">
-                <button class="header-element" id="login" href="http://cdn.shopify.com/s/files/1/2425/3665/products/127-028.jpg?v=1581019625">
-                    Entrar
-                </button>
             </a>
         </header>
+        <main class="container">
 
-        <section class="story-card">
-            <h1 class="story-card-title">As melhores sinopses <br /> para suas sinapses</h1>
-            <h2 class="story-card-sub-title">Descubra aqui as séries que tem tudo a ver com você </h2>
-        </section>
+            <section class="story-card">
+                <h1 class="story-card-title">As melhores sinopses <br /> para suas sinapses</h1>
+                <h2 class="story-card-sub-title">Descubra aqui as séries que tem tudo a ver com você </h2>
+            </section>
 
-        <nav class="catalog">
-            <!--Adicionar URL da pagina que esse elemento redireciona-->
-            <a href="./url">
-                <figure class="catalog-element">
+            <nav class="catalog">
+                <!--Adicionar URL da pagina que esse elemento redireciona-->
+                <a href="./chris.html">
+                    <figure class="catalog-element">
 
-                    <img class="catalog-fig" src="./assets/loki 2.jpg" alt="imagem loki">
+                        <img class="catalog-fig" src="./assets/loki 2.jpg" alt="imagem loki">
 
-                    <figcaption class="fig-description">
-                        <h1 class="description-title">Loki</h1>
-                        <div class= "details">
-                            <p><strong>Classificação:</strong> </p>
-                            <figure>
-                                <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/graystar.svg" alt="estrela amarela"><br />
-                            </figure>    
-                        </div>
+                        <figcaption class="fig-description">
+                            <h1 class="description-title">Loki</h1>
+                            <div class= "details">
+                                <p><strong>Classificação:</strong> </p>
+                                <figure>
+                                    <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/graystar.svg" alt="estrela amarela"><br />
+                                </figure>    
+                            </div>
 
-                        <div class="details">
-                            <p><strong>Descrição:</strong> </p>                     
-                            <p>Após roubar o tesseract dos Vingadores, Loki usa a Joia do Espaço para pular no tempo e, assim, chegar a Midgard. Mas ele acaba interferindo em momentos importantes da história da humanidade.</p>
-                        </div>
+                            <div class="details">
+                                <p><strong>Descrição:</strong> </p>                     
+                                <p>Após roubar o tesseract dos Vingadores, Loki usa a Joia do Espaço para pular no tempo e, assim, chegar a Midgard. Mas ele acaba interferindo em momentos importantes da história da humanidade.</p>
+                            </div>
 
-                        <div class="details">
-                            <p><strong>Elenco:</strong> </p>
-                            <p>Tom Hiddleston, Owen Wilson ...</p>
-                        </div>
+                            <div class="details">
+                                <p><strong>Elenco:</strong> </p>
+                                <p>Tom Hiddleston, Owen Wilson ...</p>
+                            </div>
 
-                    </figcaption>
-                </figure>
-            </a>
-            <!--Adicionar URL da pagina que esse elemento redireciona-->
-            <a href="./url">
-                <figure class="catalog-element">
+                        </figcaption>
+                    </figure>
+                </a>
+                <!--Adicionar URL da pagina que esse elemento redireciona-->
+                <a href="./stranger-things.html">
+                    <figure class="catalog-element">
 
-                    <img class="catalog-fig" src="./assets/stranger-things-poster.jpg" alt="imagem loki">
-                    
-                    <figcaption class="fig-description">
-                        <h1 class="description-title">Stranger Things</h1>
-                        <div class= "details">
-                            <p><strong>Classificação:</strong> </p>
-                            <figure>
-                                <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/graystar.svg" alt="estrela amarela"><br />
-                            </figure>    
-                        </div>
-
-                        <div class="details">
-                            <p><strong>Descrição:</strong> </p>                     
-                            <p>Quando Will desaparece misteriosamente, o xerife Jim Hopper inicia uma operação para encontrá-lo. Enquanto isso, Mike, Dustin e Lucas , melhores amigos de Will, decidem procurá-lo por conta própria.</p>
-                        </div>
-
-                        <div class="details">
-                            <p><strong>Elenco:</strong> </p>
-                            <p>Millie Bobby Brown, Winona Ryder ...</p>
-                        </div>
-                    </figcaption>
-                </figure> 
-            </a>
-            <!--Adicionar URL da pagina que esse elemento redireciona-->
-            <a href="./url">
-                <figure class="catalog-element">
-
-                    <img class="catalog-fig" src="./assets/chris-poster.jpg" alt="imagem loki">
-    
-                    <figcaption class="fig-description">
-    
-                        <h1 class="description-title">Todo Mundo odeia o Chris</h1>
+                        <img class="catalog-fig" src="./assets/stranger-things-poster.jpg" alt="imagem loki">
                         
-                        <div class= "details">
-                            <p><strong>Classificação:</strong> </p>                            
-                            <figure>
-                                <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/graystar.svg" alt="estrela amarela"><br />
-                            </figure>
-                        </div>
-    
-                        <div class="details">                            
-                            <p><strong>Descrição:</strong> </p>                     
-                            <p>A série conta a história da família Rock, com o foco no menino Chris. Ele vive situações corriqueiras da vida de um adolescente e expões seus pensamentos sobre essas de forma humorística </p>
-                        </div>
-    
-                        <div class="details">
-                            <p><strong>Elenco:</strong> </p>
-                            <p>Tyler James Williams, Terry Crews ...</p>
-                        </div>
-    
-                    </figcaption>
-    
-                </figure>
-            </a>
-            
-        </nav>
+                        <figcaption class="fig-description">
+                            <h1 class="description-title">Stranger Things</h1>
+                            <div class= "details">
+                                <p><strong>Classificação:</strong> </p>
+                                <figure>
+                                    <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/graystar.svg" alt="estrela amarela"><br />
+                                </figure>    
+                            </div>
+
+                            <div class="details">
+                                <p><strong>Descrição:</strong> </p>                     
+                                <p>Quando Will desaparece misteriosamente, o xerife Jim Hopper inicia uma operação para encontrá-lo. Enquanto isso, Mike, Dustin e Lucas , melhores amigos de Will, decidem procurá-lo por conta própria.</p>
+                            </div>
+
+                            <div class="details">
+                                <p><strong>Elenco:</strong> </p>
+                                <p>Millie Bobby Brown, Winona Ryder ...</p>
+                            </div>
+                        </figcaption>
+                    </figure> 
+                </a>
+                <!--Adicionar URL da pagina que esse elemento redireciona-->
+                <a href="./chris.html">
+                    <figure class="catalog-element">
+
+                        <img class="catalog-fig" src="./assets/chris-poster.jpg" alt="imagem loki">
         
+                        <figcaption class="fig-description">
+        
+                            <h1 class="description-title">Todo Mundo odeia o Chris</h1>
+                            
+                            <div class= "details">
+                                <p><strong>Classificação:</strong> </p>                            
+                                <figure>
+                                    <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/yellowstar.svg" alt="estrela amarela"> <img class="star" src="./assets/graystar.svg" alt="estrela amarela"><br />
+                                </figure>
+                            </div>
+        
+                            <div class="details">                            
+                                <p><strong>Descrição:</strong> </p>                     
+                                <p>A série conta a história da família Rock, com o foco no menino Chris. Ele vive situações corriqueiras da vida de um adolescente e expões seus pensamentos sobre essas de forma humorística </p>
+                            </div>
+        
+                            <div class="details">
+                                <p><strong>Elenco:</strong> </p>
+                                <p>Tyler James Williams, Terry Crews ...</p>
+                            </div>
+        
+                        </figcaption>
+        
+                    </figure>
+                </a>
+                
+            </nav>
+        </main>
     </body>
 
 </html>
