@@ -25,6 +25,7 @@ header {
     position: fixed;
     top:0;            
     width: 100vw;
+    cursor: pointer;
 }
 .logo-alphaflix{
     margin-top: 5px;
