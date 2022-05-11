@@ -1,0 +1,20 @@
+body {
+
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+aside {
+    width: 40px;
+}
+.imagem_de_fundo {
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(fundo_chris.jpg);
+    
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+}
+.icones {
+    color: #fff;
+}
