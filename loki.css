@@ -34,6 +34,10 @@ div {
   background-color: #000;
 }
 
+.header a:hover {
+  cursor: pointer;
+}
+
 .section-hero {
   padding: 5vw;
   margin: 0 auto;
