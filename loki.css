@@ -232,6 +232,10 @@ a {
   height: 34px;
 }
 
+.close:hover {
+  cursor: pointer;
+}
+
 .hidden{
   display: none;
 }
