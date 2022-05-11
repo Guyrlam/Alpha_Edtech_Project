@@ -32,8 +32,19 @@ header {
 }
 .container {
     margin-left: 60px;
-    margin-top: 9vh;
-    width: 500px;
+
+    width: 100vw;
+    display:flex;
+    height: 100vh;
+    align-items: center;
+}
+.container article {
+    width: 25%;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    width: 75%;
 }
 img#logo-title {
     width: 450px;
@@ -51,4 +62,41 @@ h2#subT {
 }
 .legend {
     color: rgb(156, 156, 156);            
+}
+.modal-play img {
+    width: 5rem;
+    height: auto;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-dialog iframe{
+    width: 60vw;
+    height: 70vh;
+    margin: 15vh 20vw;
+    display: block;
+}
+
+.close{
+    position: absolute;
+    top: 56px;
+    right: 56px;
+
+    width: 34px;
+    height: 34px;
+}
+
+.hidden{
+    display: none;
 }
