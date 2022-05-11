@@ -81,7 +81,7 @@
               </div>
               <div class="title-info-talent">
                 <div class="title-data-info-item item-starring">
-                  <span class="title-data-info-item-label">Estrelando:</span>
+                  <span class="title-data-info-item-label">Elenco:</span>
                   <span
                     class="title-data-info-item-list"
                     data-uia="info-starring"
@@ -105,7 +105,14 @@
 
       <div class="hero-image-container">
         <div class="hero-image">
-          <a href="#myModal" class="modal-play" data-toggle="modal"><img src="assets/play.svg" alt="Play"></a>
+          <a href="#myModal" class="modal-play" data-toggle="modal">
+            <figure>
+              <img src="assets/play.svg" alt="Play" onmouseover="this.src='./assets/play-hover.svg'" onmouseout="this.src='./assets/play.svg'">
+              <figcaption>
+                Assista ao Trailer
+              </figcaption>
+            </figure>
+          </a>
         </div>
       </div>
     </section>
