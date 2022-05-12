@@ -1,33 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta property="og:title" content="Everybody Hates Chris">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="./chris.html">
+        <meta property="og:image" content="./assets/chris-logo.png">
+
+        <link rel="shortcut icon" href="./assets/favicon.svg">
         <title>Alphaflix | Everybody Hates Chris</title>
+
         <link rel="stylesheet" href="chris.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <header>
-            <a href="./index.html">
-                <img id="alphaflix" src="./assets/logo-alphaflix.svg" alt="Logo da AlphaFlix">
-            </a>            
-        </header>           
-        <article class="imagem_de_fundo" >
-            <div>                
-                <img src="./assets/logo-chris.webp" alt="" width="400" height="200">
-                <h2 id="title">Todo Mundo Odeia o Chris</h2>
-                <h4 id="information">2005 | 12 | 4 Temporadas | Comédia </h4>
-                <p> Baseada na vida do comediante Chris Rock, a série conta a história de Chris, um adolescente 
-                negro que vive com a família no bairro do Brooklyn, em Nova York, na década de 1980. 
-                </p>
+            <a href="./index.html"><img class="logo-alphaflix" src="./assets/logo-alphaflix.svg"/></a>
+        </header>
+        <section class="container">
+            <article>
+                <img id="logo-title" src="./assets/chris-logo.png" alt="Stranger Things"></br>
+                <h2 id="subT">Todo Mundo Odeia o Chris</h2></br>
+                <spam class="legend">2005 | <spam class="mature-number">12</spam> |  4 Temporadas  |  Comédia</spam> </br>
+                <p class="sinopse">Baseada na vida do comediante Chris Rock, a série conta a história de Chris, um adolescente 
+                    negro que vive com a família no bairro do Brooklyn, em Nova York, na década de 1980.
+                </p> </br>
+                <p><spam class="legend">Elenco: </spam> Terry Crews, Tichina Arnold, Tequan Richmond, Imani Hakim, Vincent Martella, Tyler James Williams, Chris Rock </p>
+                <p><spam class="legend">Criação: </spam> Chris Rock, Ali Leroi</p>
+            </article>
+            <div class="buttonContainer">
+                <a href="#myModal" class="modal-play" data-toggle="modal"><img src="assets/play.svg" alt="Play"></a>
             </div>
-            <div class="play">
-                <a href="index.html" data-toggle="modal"><img src="./assets/play.svg" alt="Play" width="80" height="80"></a>
+
+            <div id="myModal" class="modal fade hidden">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <button type="button" class="close" data-dismiss="modal">X</button>
+                                <iframe id="trailerVideo" 
+                                class="embed-responsive-item"  src="https://www.youtube.com/embed/jbqAPsxNluc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="inf-series">
-                <span class="name">Elenco:</span><span> Terry Crews, Tichina Arnold, Tequan Richmond, Imani Hakim, Vincent Martella, Tyler James Williams, Chris Rock</span>
-            </br>        
-                <span class="name">Criação: </span><span> Chris Rock, Ali Leroi</span>
-            </div>            
-        </article>
+        </section>
     </body>
 </html>
