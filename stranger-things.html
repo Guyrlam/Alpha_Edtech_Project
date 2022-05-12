@@ -153,6 +153,23 @@
             <p><spam class="legend">Elenco: </spam> Winona Ryder,David Harbour,Millie Bobby Brown</p>
             <p><spam class="legend">Criação: </spam> The Duffer Brothers</p>
         </article>
+        <div class="buttonContainer">
+            <a href="#myModal" class="modal-play" data-toggle="modal"><img src="assets/play.svg" alt="Play"></a>
+        </div>
+
+        <div id="myModal" class="modal fade hidden">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <button type="button" class="close" data-dismiss="modal">X</button>
+                            <iframe id="trailerVideo" 
+                            class="embed-responsive-item"  src="https://www.youtube.com/embed/b9EkMc79ZSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
