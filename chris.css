@@ -1,20 +1,106 @@
-body {
-
-    background: black;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+* {
+    padding:0;
+    margin:0;
 }
-aside {
-    width: 40px;
-}
-.imagem_de_fundo {
-    font-size: 16px;
-    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(fundo_chris.jpg);
-    
-    height: 550px;
-    width: 100%;
+body {            
+    -webkit-box-shadow: inset 590px 0px 110px -30px rgba(37, 37, 37, 0.9);
+    -moz-box-shadow: inset 590px 0px 110px -30px rgba(37, 37, 37, 0.9);
+    box-shadow: inset 590px 0px 110px -30px rgba(37, 37, 37, 0.9);                  
+    background-image: url('./assets/backgroud-cris.jpg');
+    background-repeat: no-repeat;
+    display: table;
+    width: 100vw;
+    height: 80vh;
+    padding: 100px 0;
+    color: #ffffff;  
+    background-position: 30% 45%;
     background-size: cover;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 1.2;
+    overflow: hidden;          
+}        
+header {
+    height: 60px;
+    background-color: rgb(7, 7, 7);            
+    position: fixed;
+    top:0;            
+    width: 100vw;
+    cursor: pointer;
 }
-.icones {
-    color: #fff;
+.logo-alphaflix{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.container {
+    margin-left: 60px;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display:flex;
+    align-items: center;
+    position: fixed;
+    top: 60px;
+    left: 0;
+}
+.container article {
+    width: 25%;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+img#logo-title {
+    width: 450px;
+}
+h2#subT {
+    margin-top: 50px;
+}
+.sinopse {
+    margin-top: 30px;
+    font-size: 13pt;
+}
+.mature-number {
+    border: 1px solid #a1a1a1;
+    padding: 0 5px;
+
+}
+.legend {
+    color: rgb(156, 156, 156);            
+}
+.modal-play img {
+    width: 5rem;
+    height: auto;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-dialog iframe{
+    width: 60vw;
+    height: 70vh;
+    margin: 15vh 20vw;
+    display: block;
+}
+
+.close{
+    position: absolute;
+    top: 56px;
+    right: 56px;
+
+    width: 34px;
+    height: 34px;
+}
+
+.hidden{
+    display: none;
 }

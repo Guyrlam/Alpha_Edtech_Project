@@ -55,6 +55,7 @@
             position: fixed;
             top:0;            
             width: 100vw;
+            cursor: pointer;
         }
         .logo-alphaflix{
             margin-top: 5px;
@@ -63,7 +64,19 @@
         .container {
             margin-left: 60px;
             margin-top: 9vh;
-            width: 500px;
+            width: 100vw;
+
+            display:flex;
+            height: 100vh;
+            align-items: center;
+        }
+        .container article {
+            width: 25%;
+        }
+        .buttonContainer{
+            display: flex;
+            justify-content: center;
+            width: 75%;
         }
         img#logo-title {
             width: 450px;
@@ -82,7 +95,49 @@
         .legend {
             color: rgb(156, 156, 156);            
         }
+        
+        .modal-play img {
+            width: 5rem;
+            height: auto;
+        }
+
+        .modal{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+
+        .modal-dialog iframe{
+            width: 60vw;
+            height: 70vh;
+            margin: 15vh 20vw;
+            display: block;
+        }
+
+        .close{
+            position: absolute;
+            top: 56px;
+            right: 56px;
+
+            width: 34px;
+            height: 34px;
+            cursor: pointer;
+        }
+
+        .hidden{
+            display: none;
+        }
     </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
@@ -98,6 +153,23 @@
             <p><spam class="legend">Elenco: </spam> Winona Ryder,David Harbour,Millie Bobby Brown</p>
             <p><spam class="legend">Criação: </spam> The Duffer Brothers</p>
         </article>
+        <div class="buttonContainer">
+            <a href="#myModal" class="modal-play" data-toggle="modal"><img src="assets/play.svg" alt="Play"></a>
+        </div>
+
+        <div id="myModal" class="modal fade hidden">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <button type="button" class="close" data-dismiss="modal">X</button>
+                            <iframe id="trailerVideo" 
+                            class="embed-responsive-item"  src="https://www.youtube.com/embed/b9EkMc79ZSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

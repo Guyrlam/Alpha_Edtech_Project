@@ -16,7 +16,7 @@
 
   <body>
     <header class="header">
-      <a href="./home"><img src="assets/logo.svg" alt="Logo Alphaflix" /></a>
+      <a href="./index.html"><img src="assets/logo.svg" alt="Logo Alphaflix" /></a>
     </header>
 
     <section class="section-hero">
@@ -74,19 +74,19 @@
               data-uia="title-info-synopsis-talent"
             >
               <div class="title-info-synopsis" data-uia="title-info-synopsis">
-                Em "Loki", da Marvel Studios, o temperamental vilão Loki (Tom
-                Hiddleston) retoma seu papel como o Deus da Mentira nesta nova
+                Em "Loki", da Marvel Studios, o temperamental vilão, interpretado por Tom
+                Hiddleston, retoma seu papel como o Deus da Mentira nesta nova
                 série, que ocorre após os eventos de "Vingadores: Ultimato".
                 Kate Herron dirige, e Michael Waldron assina o roteiro.
               </div>
               <div class="title-info-talent">
                 <div class="title-data-info-item item-starring">
-                  <span class="title-data-info-item-label">Estrelando:</span>
+                  <span class="title-data-info-item-label">Elenco:</span>
                   <span
                     class="title-data-info-item-list"
                     data-uia="info-starring"
                     >Tom Hiddleston, Sophia Di Martino, Owen Wilson, Gugu
-                    Mbatha-Raw, Wunmi Mosaku</span
+                    Mbatha-Raw, Wunmi Mosaku.</span
                   >
                 </div>
                 <div class="title-data-info-item item-creators">
@@ -94,7 +94,7 @@
                   <span
                     class="title-data-info-item-list"
                     data-uia="info-creators"
-                    >Michael Waldron</span
+                    >Michael Waldron.</span
                   >
                 </div>
               </div>
@@ -105,7 +105,14 @@
 
       <div class="hero-image-container">
         <div class="hero-image">
-          <a href="#myModal" class="modal-play" data-toggle="modal"><img src="assets/play.svg" alt="Play"></a>
+          <a href="#myModal" class="modal-play" data-toggle="modal">
+            <figure>
+              <img src="assets/play.svg" alt="Play" onmouseover="this.src='./assets/play-hover.svg'" onmouseout="this.src='./assets/play.svg'">
+              <figcaption>
+                Assista ao Trailer
+              </figcaption>
+            </figure>
+          </a>
         </div>
       </div>
     </section>
