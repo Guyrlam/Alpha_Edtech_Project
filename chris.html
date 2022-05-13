@@ -34,7 +34,14 @@
                 <p><spam class="legend">Criação: </spam> Chris Rock, Ali Leroi</p>
             </article>
             <div class="buttonContainer">
-                <a href="#myModal" class="modal-play" data-toggle="modal"><img src="assets/play.svg" alt="Play"></a>
+                <a href="#myModal" class="modal-play" data-toggle="modal">
+                    <figure>
+                        <img src="assets/play.svg" alt="Play" onmouseover="this.src='./assets/play-hover.svg'" onmouseout="this.src='./assets/play.svg'">
+                        <figcaption>
+                          Assista ao Trailer
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
 
             <div id="myModal" class="modal fade hidden">
